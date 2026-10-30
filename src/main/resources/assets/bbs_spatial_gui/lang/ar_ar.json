@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "سجل مفصل",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "يكتب تفاصيل التوافق في سجل اللعبة.",
+  "bbs_spatial_gui.config.advanced.title": "متقدم",
+  "bbs_spatial_gui.config.advanced.tooltip": "متقدم",
+  "bbs_spatial_gui.config.general.enabled": "تفعيل واجهات BBS المكانية",
+  "bbs_spatial_gui.config.general.enabled-comment": "يُطبّق بعد مغادرة BBS وانتهاء حركة الإغلاق. اضبط التخطيط في Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "عام",
+  "bbs_spatial_gui.config.general.tooltip": "عام",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "تسجيل مؤشر الفأرة",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "يؤثر في المؤشر داخل التسجيل فقط، ولا يغيّر المؤشر المحلي.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "تسجيل الواجهة المكانية الظاهرة باستخدام F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "يُطبّق على التسجيل التالي. عند تعطيله تُستخدم مصادر BBS الأصلية. يصوّر تصدير الفيلم شاشة المراقبة دائمًا.",
+  "bbs_spatial_gui.config.recording.title": "التسجيل",
+  "bbs_spatial_gui.config.recording.tooltip": "التسجيل",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "استخدام سمة مؤشر النظام في التسجيلات",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "تُستخدم سمة النظام إن توفرت، وإلا تُستخدم أشكال المؤشر القياسية.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

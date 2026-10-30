@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Szczegółowy dziennik",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Zapisuje informacje o zgodności w dzienniku gry.",
+  "bbs_spatial_gui.config.advanced.title": "Zaawansowane",
+  "bbs_spatial_gui.config.advanced.tooltip": "Zaawansowane",
+  "bbs_spatial_gui.config.general.enabled": "Włącz przestrzenne interfejsy BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "Działa po zamknięciu BBS i zakończeniu animacji. Układ ustawisz w Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "Ogólne",
+  "bbs_spatial_gui.config.general.tooltip": "Ogólne",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Nagrywaj wskaźnik myszy",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Dotyczy tylko wskaźnika w nagraniach, nie lokalnego kursora.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Nagrywaj widoczny interfejs przestrzenny przez F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Dotyczy następnego nagrania. Po wyłączeniu używane są natywne źródła BBS. Eksport filmu zawsze nagrywa monitor.",
+  "bbs_spatial_gui.config.recording.title": "Nagrywanie",
+  "bbs_spatial_gui.config.recording.tooltip": "Nagrywanie",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Używaj systemowego motywu kursora w nagraniach",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Używa motywu systemowego, jeśli jest dostępny, w przeciwnym razie standardowych kursorów.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

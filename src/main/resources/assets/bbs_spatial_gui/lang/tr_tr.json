@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Ayrıntılı günlük",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Uyumluluk ayrıntılarını oyun günlüğüne yazar.",
+  "bbs_spatial_gui.config.advanced.title": "Gelişmiş",
+  "bbs_spatial_gui.config.advanced.tooltip": "Gelişmiş",
+  "bbs_spatial_gui.config.general.enabled": "BBS uzamsal arayüzlerini etkinleştir",
+  "bbs_spatial_gui.config.general.enabled-comment": "BBS’den çıkıp kapanış animasyonu tamamlanınca uygulanır. Yerleşimi Spatial GUI üzerinden ayarlayın.",
+  "bbs_spatial_gui.config.general.title": "Genel",
+  "bbs_spatial_gui.config.general.tooltip": "Genel",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Fare işaretçisini kaydet",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Yalnızca kayıtlardaki işaretçiyi etkiler, yerel imleci değiştirmez.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "F4/F6 ile görünen uzamsal arayüzü kaydet",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Sonraki kayıt için geçerlidir. Kapalıysa BBS’nin yerel kaynakları kullanılır. Film dışa aktarımı her zaman monitörü kaydeder.",
+  "bbs_spatial_gui.config.recording.title": "Kayıt",
+  "bbs_spatial_gui.config.recording.tooltip": "Kayıt",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Kayıtlarda sistem imleç temasını kullan",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Varsa sistem temasını, yoksa standart imleç şekillerini kullanır.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "詳細記錄",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "在遊戲日誌中記錄相容資訊。",
+  "bbs_spatial_gui.config.advanced.title": "進階",
+  "bbs_spatial_gui.config.advanced.tooltip": "進階",
+  "bbs_spatial_gui.config.general.enabled": "啟用 BBS 介面空間化",
+  "bbs_spatial_gui.config.general.enabled-comment": "離開 BBS 並完成關閉動畫後生效。面板配置請在 Spatial GUI 中設定。",
+  "bbs_spatial_gui.config.general.title": "一般",
+  "bbs_spatial_gui.config.general.tooltip": "一般",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "錄製滑鼠指標",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "僅影響錄影中的滑鼠指標，不改變本機游標。",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "F4／F6 錄製所見空間介面",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "下次開始錄製時生效；停用時遵循 BBS 原生錄製來源。影片匯出按鈕一律錄製監視器畫面。",
+  "bbs_spatial_gui.config.recording.title": "影片錄製",
+  "bbs_spatial_gui.config.recording.tooltip": "影片錄製",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "錄影指標使用系統佈景主題",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "系統佈景主題可用時使用系統游標，否則使用標準游標形狀。",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

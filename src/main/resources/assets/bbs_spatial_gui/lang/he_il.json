@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "יומן מפורט",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "כותב פרטי תאימות ליומן המשחק.",
+  "bbs_spatial_gui.config.advanced.title": "מתקדם",
+  "bbs_spatial_gui.config.advanced.tooltip": "מתקדם",
+  "bbs_spatial_gui.config.general.enabled": "הפעלת ממשקי BBS מרחביים",
+  "bbs_spatial_gui.config.general.enabled-comment": "יחול לאחר יציאה מ־BBS וסיום הנפשת הסגירה. הגדירו את הפריסה ב־Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "כללי",
+  "bbs_spatial_gui.config.general.tooltip": "כללי",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "הקלטת סמן העכבר",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "משפיע רק על הסמן בהקלטות, לא על הסמן המקומי.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "הקלטת הממשק המרחבי המוצג באמצעות F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "יחול בהקלטה הבאה. כשהאפשרות כבויה ייעשה שימוש במקורות המקוריים של BBS. יצוא סרט תמיד מקליט את הצג.",
+  "bbs_spatial_gui.config.recording.title": "הקלטה",
+  "bbs_spatial_gui.config.recording.tooltip": "הקלטה",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "שימוש בערכת הסמן של המערכת בהקלטות",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "שימוש בערכת המערכת אם זמינה, אחרת בסמנים תקניים.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

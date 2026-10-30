@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Detailed logging",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Write compatibility details to the game log.",
+  "bbs_spatial_gui.config.advanced.title": "Advanced",
+  "bbs_spatial_gui.config.advanced.tooltip": "Advanced",
+  "bbs_spatial_gui.config.general.enabled": "Enable spatial BBS interfaces",
+  "bbs_spatial_gui.config.general.enabled-comment": "Applies after leaving BBS and finishing the closing animation. Configure panel layout in Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "General",
+  "bbs_spatial_gui.config.general.tooltip": "General",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Record the mouse pointer",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Only affects the pointer in recordings; your local cursor is unchanged.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Record the displayed spatial GUI with F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Applies to the next recording. When disabled, use BBS native recording sources. The film export button always records the monitor.",
+  "bbs_spatial_gui.config.recording.title": "Recording",
+  "bbs_spatial_gui.config.recording.tooltip": "Recording",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Use the system cursor theme in recordings",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Use the system theme when available, otherwise use standard cursor shapes.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

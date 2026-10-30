@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Докладний журнал",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Записує відомості про сумісність у журнал гри.",
+  "bbs_spatial_gui.config.advanced.title": "Додатково",
+  "bbs_spatial_gui.config.advanced.tooltip": "Додатково",
+  "bbs_spatial_gui.config.general.enabled": "Увімкнути просторові інтерфейси BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "Застосовується після виходу з BBS і завершення анімації закриття. Розташування налаштовується у Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "Загальні",
+  "bbs_spatial_gui.config.general.tooltip": "Загальні",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Записувати вказівник миші",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Впливає лише на вказівник у записі, а не на локальний курсор.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Записувати видимий просторовий інтерфейс через F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Діє з наступного запису. Якщо вимкнено, використовуються штатні джерела BBS. Експорт фільму завжди записує монітор.",
+  "bbs_spatial_gui.config.recording.title": "Запис",
+  "bbs_spatial_gui.config.recording.tooltip": "Запис",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Використовувати системну тему курсора в записі",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Використовує системну тему, якщо доступна, інакше стандартні курсори.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

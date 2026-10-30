@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Journal détaillé",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Écrit les détails de compatibilité dans le journal du jeu.",
+  "bbs_spatial_gui.config.advanced.title": "Avancé",
+  "bbs_spatial_gui.config.advanced.tooltip": "Avancé",
+  "bbs_spatial_gui.config.general.enabled": "Activer les interfaces spatiales de BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "S’applique après avoir quitté BBS et terminé l’animation de fermeture. Réglez la disposition dans Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "Général",
+  "bbs_spatial_gui.config.general.tooltip": "Général",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Enregistrer le pointeur de la souris",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Ne concerne que le pointeur des vidéos, pas le curseur local.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Enregistrer l’interface spatiale affichée avec F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "S’applique au prochain enregistrement. Si désactivé, les sources natives de BBS sont utilisées. L’exportation de films enregistre toujours le moniteur.",
+  "bbs_spatial_gui.config.recording.title": "Enregistrement",
+  "bbs_spatial_gui.config.recording.tooltip": "Enregistrement",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Utiliser le thème système du curseur dans les vidéos",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Utilise le thème système si disponible, sinon les curseurs standard.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

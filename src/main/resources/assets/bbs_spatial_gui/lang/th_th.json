@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "บันทึกรายละเอียด",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "บันทึกรายละเอียดความเข้ากันได้ลงในบันทึกเกม",
+  "bbs_spatial_gui.config.advanced.title": "ขั้นสูง",
+  "bbs_spatial_gui.config.advanced.tooltip": "ขั้นสูง",
+  "bbs_spatial_gui.config.general.enabled": "เปิดใช้อินเทอร์เฟซเชิงพื้นที่ BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "มีผลหลังออกจาก BBS และจบภาพเคลื่อนไหวปิด ตั้งค่าเค้าโครงใน Spatial GUI",
+  "bbs_spatial_gui.config.general.title": "ทั่วไป",
+  "bbs_spatial_gui.config.general.tooltip": "ทั่วไป",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "บันทึกตัวชี้เมาส์",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "มีผลต่อตัวชี้ในวิดีโอเท่านั้น ไม่เปลี่ยนเคอร์เซอร์ในเครื่อง",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "บันทึกอินเทอร์เฟซเชิงพื้นที่ที่เห็นด้วย F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "มีผลในการบันทึกครั้งถัดไป เมื่อปิดจะใช้แหล่งบันทึกเดิมของ BBS การส่งออกภาพยนตร์จะบันทึกจอมอนิเตอร์เสมอ",
+  "bbs_spatial_gui.config.recording.title": "การบันทึก",
+  "bbs_spatial_gui.config.recording.tooltip": "การบันทึก",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "ใช้ธีมเคอร์เซอร์ระบบในวิดีโอ",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "ใช้ธีมระบบหากมี มิฉะนั้นใช้รูปทรงเคอร์เซอร์มาตรฐาน",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

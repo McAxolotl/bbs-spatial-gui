@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "تفصیلی لاگ",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "مطابقت کی تفصیلات گیم لاگ میں لکھتا ہے۔",
+  "bbs_spatial_gui.config.advanced.title": "اعلیٰ ترتیبات",
+  "bbs_spatial_gui.config.advanced.tooltip": "اعلیٰ ترتیبات",
+  "bbs_spatial_gui.config.general.enabled": "BBS کے مکانی انٹرفیس فعال کریں",
+  "bbs_spatial_gui.config.general.enabled-comment": "BBS بند کرنے اور بندش کی حرکت مکمل ہونے کے بعد لاگو ہوگا۔ ترتیب Spatial GUI میں کریں۔",
+  "bbs_spatial_gui.config.general.title": "عمومی",
+  "bbs_spatial_gui.config.general.tooltip": "عمومی",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "ماؤس پوائنٹر ریکارڈ کریں",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "صرف ریکارڈنگ کے پوائنٹر پر اثر پڑتا ہے، مقامی کرسر نہیں بدلتا۔",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "F4/F6 سے نظر آنے والا مکانی انٹرفیس ریکارڈ کریں",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "اگلی ریکارڈنگ سے لاگو ہوگا۔ بند ہونے پر BBS کے اصل ذرائع استعمال ہوں گے۔ فلم برآمد ہمیشہ مانیٹر ریکارڈ کرتی ہے۔",
+  "bbs_spatial_gui.config.recording.title": "ریکارڈنگ",
+  "bbs_spatial_gui.config.recording.tooltip": "ریکارڈنگ",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "ریکارڈنگ میں سسٹم کرسر تھیم استعمال کریں",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "اگر دستیاب ہو تو سسٹم تھیم، ورنہ معیاری کرسر استعمال ہوں گے۔",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Részletes naplózás",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Kompatibilitási részleteket ír a játék naplójába.",
+  "bbs_spatial_gui.config.advanced.title": "Haladó",
+  "bbs_spatial_gui.config.advanced.tooltip": "Haladó",
+  "bbs_spatial_gui.config.general.enabled": "BBS térbeli felületek engedélyezése",
+  "bbs_spatial_gui.config.general.enabled-comment": "A BBS elhagyása és a bezárási animáció után lép életbe. Az elrendezést a Spatial GUI kezeli.",
+  "bbs_spatial_gui.config.general.title": "Általános",
+  "bbs_spatial_gui.config.general.tooltip": "Általános",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Egérmutató rögzítése",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Csak a felvételek mutatóját érinti, a helyi egérmutatót nem.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "A látható térbeli felület felvétele F4/F6-tal",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "A következő felvételre érvényes. Kikapcsolva a BBS eredeti forrásait használja. A filmexport mindig a monitort rögzíti.",
+  "bbs_spatial_gui.config.recording.title": "Felvétel",
+  "bbs_spatial_gui.config.recording.tooltip": "Felvétel",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Rendszermutató használata a felvételeken",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Ha elérhető, a rendszertémát használja, egyébként szabványos mutatókat.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

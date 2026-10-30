@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Nhật ký chi tiết",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Ghi chi tiết tương thích vào nhật ký trò chơi.",
+  "bbs_spatial_gui.config.advanced.title": "Nâng cao",
+  "bbs_spatial_gui.config.advanced.tooltip": "Nâng cao",
+  "bbs_spatial_gui.config.general.enabled": "Bật giao diện không gian BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "Có hiệu lực sau khi thoát BBS và kết thúc hoạt ảnh đóng. Điều chỉnh bố cục trong Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "Chung",
+  "bbs_spatial_gui.config.general.tooltip": "Chung",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Ghi con trỏ chuột",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Chỉ ảnh hưởng con trỏ trong bản ghi, không đổi con trỏ cục bộ.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Ghi giao diện không gian đang hiển thị bằng F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Áp dụng cho lần ghi tiếp theo. Khi tắt, dùng nguồn ghi gốc của BBS. Nút xuất phim luôn ghi màn hình giám sát.",
+  "bbs_spatial_gui.config.recording.title": "Ghi hình",
+  "bbs_spatial_gui.config.recording.tooltip": "Ghi hình",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Dùng giao diện con trỏ hệ thống trong bản ghi",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Dùng giao diện hệ thống nếu có, nếu không thì dùng hình con trỏ tiêu chuẩn.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

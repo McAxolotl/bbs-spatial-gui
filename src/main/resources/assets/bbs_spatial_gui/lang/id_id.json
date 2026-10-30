@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Log terperinci",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Tulis rincian kompatibilitas ke log permainan.",
+  "bbs_spatial_gui.config.advanced.title": "Lanjutan",
+  "bbs_spatial_gui.config.advanced.tooltip": "Lanjutan",
+  "bbs_spatial_gui.config.general.enabled": "Aktifkan antarmuka spasial BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "Berlaku setelah keluar dari BBS dan animasi penutupan selesai. Atur tata letak melalui Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "Umum",
+  "bbs_spatial_gui.config.general.tooltip": "Umum",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Rekam penunjuk tetikus",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Hanya memengaruhi penunjuk dalam rekaman, bukan kursor lokal.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Rekam antarmuka spasial yang terlihat dengan F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Berlaku untuk rekaman berikutnya. Saat nonaktif, sumber asli BBS digunakan. Ekspor film selalu merekam monitor.",
+  "bbs_spatial_gui.config.recording.title": "Perekaman",
+  "bbs_spatial_gui.config.recording.tooltip": "Perekaman",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Gunakan tema kursor sistem dalam rekaman",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Gunakan tema sistem jika tersedia; jika tidak, gunakan bentuk kursor standar.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

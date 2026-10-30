@@ -7,8 +7,25 @@
   "authors": [
     "McAxolotl"
   ],
+  "contributors": [
+    "quaIett"
+  ],
   "license": "MIT",
   "environment": "client",
+  "entrypoints": {
+    "bbs-client-addon": [
+      "mcaxolotl.bbsspatialgui.BBSSpatialGui"
+    ],
+    "spatial_gui_extras:world_view": [
+      "mcaxolotl.bbsspatialgui.compat.WorldViewFilter"
+    ],
+    "spatial_gui_extras:cursor_shape": [
+      "mcaxolotl.bbsspatialgui.compat.CursorShape"
+    ]
+  },
+  "mixins": [
+    "bbs_spatial_gui.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.18.4",
     "minecraft": "=1.20.1",

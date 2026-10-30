@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "상세 로그",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "호환성 정보를 게임 로그에 기록합니다.",
+  "bbs_spatial_gui.config.advanced.title": "고급",
+  "bbs_spatial_gui.config.advanced.tooltip": "고급",
+  "bbs_spatial_gui.config.general.enabled": "BBS 공간 인터페이스 사용",
+  "bbs_spatial_gui.config.general.enabled-comment": "BBS를 닫고 닫기 애니메이션이 끝난 뒤 적용됩니다. 배치는 Spatial GUI에서 설정하세요.",
+  "bbs_spatial_gui.config.general.title": "일반",
+  "bbs_spatial_gui.config.general.tooltip": "일반",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "마우스 포인터 녹화",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "녹화 영상의 포인터에만 적용되며 로컬 커서는 바뀌지 않습니다.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "F4/F6으로 표시된 공간 인터페이스 녹화",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "다음 녹화부터 적용됩니다. 끄면 BBS 기본 녹화 소스를 사용합니다. 영상 내보내기는 항상 모니터를 녹화합니다.",
+  "bbs_spatial_gui.config.recording.title": "녹화",
+  "bbs_spatial_gui.config.recording.tooltip": "녹화",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "녹화에 시스템 커서 테마 사용",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "가능하면 시스템 테마를 사용하고, 사용할 수 없으면 표준 커서를 사용합니다.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

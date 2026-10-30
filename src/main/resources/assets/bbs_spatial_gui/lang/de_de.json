@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Ausführliche Protokollierung",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Schreibt Kompatibilitätsdetails ins Spielprotokoll.",
+  "bbs_spatial_gui.config.advanced.title": "Erweitert",
+  "bbs_spatial_gui.config.advanced.tooltip": "Erweitert",
+  "bbs_spatial_gui.config.general.enabled": "Räumliche BBS-Oberflächen aktivieren",
+  "bbs_spatial_gui.config.general.enabled-comment": "Gilt nach dem Verlassen von BBS und dem Ende der Schließanimation. Das Layout wird in Spatial GUI eingestellt.",
+  "bbs_spatial_gui.config.general.title": "Allgemein",
+  "bbs_spatial_gui.config.general.tooltip": "Allgemein",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Mauszeiger aufnehmen",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Betrifft nur den Zeiger in Aufnahmen, nicht den lokalen Mauszeiger.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Sichtbare räumliche Oberfläche mit F4/F6 aufnehmen",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Gilt für die nächste Aufnahme. Bei Deaktivierung gelten die ursprünglichen BBS-Quellen. Der Filmexport nimmt immer den Monitor auf.",
+  "bbs_spatial_gui.config.recording.title": "Aufnahme",
+  "bbs_spatial_gui.config.recording.tooltip": "Aufnahme",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Systemzeiger in Aufnahmen verwenden",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Wenn verfügbar wird das Systemdesign verwendet, sonst Standardzeiger.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}

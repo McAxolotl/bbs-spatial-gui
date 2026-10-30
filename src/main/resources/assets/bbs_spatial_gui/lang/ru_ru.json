@@ -1,0 +1,19 @@
+{
+  "bbs_spatial_gui.config.advanced.debugLogging": "Подробный журнал",
+  "bbs_spatial_gui.config.advanced.debugLogging-comment": "Записывает сведения о совместимости в журнал игры.",
+  "bbs_spatial_gui.config.advanced.title": "Дополнительно",
+  "bbs_spatial_gui.config.advanced.tooltip": "Дополнительно",
+  "bbs_spatial_gui.config.general.enabled": "Включить пространственные интерфейсы BBS",
+  "bbs_spatial_gui.config.general.enabled-comment": "Применяется после выхода из BBS и завершения анимации закрытия. Расположение настраивается в Spatial GUI.",
+  "bbs_spatial_gui.config.general.title": "Общие",
+  "bbs_spatial_gui.config.general.tooltip": "Общие",
+  "bbs_spatial_gui.config.recording.recordMousePointer": "Записывать указатель мыши",
+  "bbs_spatial_gui.config.recording.recordMousePointer-comment": "Влияет только на указатель в записи, но не на локальный курсор.",
+  "bbs_spatial_gui.config.recording.recordSpatialGui": "Записывать видимый пространственный интерфейс через F4/F6",
+  "bbs_spatial_gui.config.recording.recordSpatialGui-comment": "Действует со следующей записи. При отключении используются штатные источники BBS. Экспорт фильма всегда записывает монитор.",
+  "bbs_spatial_gui.config.recording.title": "Запись",
+  "bbs_spatial_gui.config.recording.tooltip": "Запись",
+  "bbs_spatial_gui.config.recording.useNativeCursor": "Использовать системную тему курсора в записи",
+  "bbs_spatial_gui.config.recording.useNativeCursor-comment": "Используется системная тема, если доступна, иначе стандартные курсоры.",
+  "bbs_spatial_gui.config.title": "BBS Spatial GUI"
+}
