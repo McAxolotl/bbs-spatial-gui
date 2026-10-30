@@ -1,0 +1,36 @@
+configurations { bbsFixture { transitive = false } }
+
+dependencies {
+    bbsFixture 'maven.modrinth:bbs-fs:tD7xHigj'
+    testRuntimeOnly 'org.lwjgl:lwjgl:3.3.1:natives-linux'
+    testRuntimeOnly 'org.lwjgl:lwjgl-glfw:3.3.1:natives-linux'
+    testRuntimeOnly 'org.lwjgl:lwjgl-opengl:3.3.1:natives-linux'
+}
+
+def checks = [
+    bbsSettingsTest: 'mcaxolotl.bbsspatialgui.BBSSettingsTests',
+    pointerTest: 'mcaxolotl.bbsspatialgui.PointerTests',
+    gpuTest: 'mcaxolotl.bbsspatialgui.GpuTests',
+    upstreamRecorderTest: 'mcaxolotl.bbsspatialgui.UpstreamRecorderChecks',
+    localizationTest: 'mcaxolotl.bbsspatialgui.LocalizationTests'
+]
+
+checks.each { taskName, entrypoint ->
+    tasks.register(taskName, JavaExec) {
+        dependsOn tasks.named('testClasses')
+        classpath = sourceSets.test.runtimeClasspath
+        mainClass = entrypoint
+        workingDir = layout.buildDirectory.dir("test-runtime/${taskName}").get().asFile
+        doFirst { workingDir.mkdirs() }
+        if (taskName == 'upstreamRecorderTest') classpath += configurations.bbsFixture
+        if (taskName in ['gpuTest', 'upstreamRecorderTest']) {
+            onlyIf {
+                System.getenv('DISPLAY') || providers.gradleProperty('gpuTests')
+                        .getOrElse('false').toBoolean()
+            }
+        }
+    }
+}
+
+tasks.named('test') { enabled = false }
+tasks.named('check') { dependsOn checks.keySet().collect { tasks.named(it) } }

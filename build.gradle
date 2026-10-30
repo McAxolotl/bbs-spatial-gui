@@ -76,3 +76,5 @@ jar {
 publishing {
     publications { mavenJava(MavenPublication) { from components.java } }
 }
+
+apply from: 'gradle/checks.gradle'
