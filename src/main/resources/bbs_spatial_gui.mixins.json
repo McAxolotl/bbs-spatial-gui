@@ -46,7 +46,8 @@
     "RecordingAudioMixin",
     "BBSCursorMixin",
     "SettingsOrderMixin",
-    "SpatialUiScaleMixin"
+    "SpatialUiScaleMixin",
+    "EntityShadowCaptureMixin"
   ],
   "injectors": {
     "defaultRequire": 0
