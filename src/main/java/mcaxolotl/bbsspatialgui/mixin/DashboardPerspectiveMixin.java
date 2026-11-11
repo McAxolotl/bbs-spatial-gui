@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.tastytrash.spatialGUI.client.SpatialGUIClient;
 
 @Mixin(targets = "mchorse.bbs_mod.ui.dashboard.UIDashboard", remap = false)
@@ -39,6 +40,26 @@ public abstract class DashboardPerspectiveMixin {
                     "[BBS Spatial GUI perspective] savedNative=" + bsg$savedNativePerspective);
         }
         return bsg$savedNativePerspective;
+    }
+
+    /**
+     * BBS forces FIRST_PERSON while the dashboard is open and restores the saved perspective on
+     * close. That temporary value leaks into Spatial GUI's camera-mode detection because the
+     * screen is hooked right after onOpen() returns, so a player who was in third person suddenly
+     * got a first-person screen (and a camera snap). Restore the real perspective before the
+     * screen is hooked; BBS still has the same value in lastPerspective for its own restore.
+     */
+    @Inject(method = "onOpen", at = @At("RETURN"), require = 1, remap = false)
+    private void bsg$restorePerspectiveBeforeHook(CallbackInfo ci) {
+        if (!BBSSpatialGui.enabled() || !SpatialGUIClient.isEnabled()) return;
+        if (bsg$savedNativePerspective == null) return;
+        var options = class_310.method_1551().field_1690;
+        options.method_31043(bsg$savedNativePerspective);
+        if (BBSSpatialGui.debugLogging()) {
+            System.out.println(
+                    "[BBS Spatial GUI perspective] restored before hook="
+                            + bsg$savedNativePerspective);
+        }
     }
 
     @Inject(method = "onClose", at = @At("RETURN"), require = 1, remap = false)
