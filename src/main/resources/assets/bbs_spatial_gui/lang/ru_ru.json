@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Дополнительно",
   "bbs_spatial_gui.config.general.enabled": "Включить пространственные интерфейсы BBS",
   "bbs_spatial_gui.config.general.enabled-comment": "Применяется после выхода из BBS и завершения анимации закрытия. Расположение настраивается в Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "Использовать масштаб интерфейса BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "Применяет масштаб интерфейса BBS к пространственным интерфейсам (округление до 1–6). Выключено: используется масштаб Spatial GUI.",
   "bbs_spatial_gui.config.general.title": "Общие",
   "bbs_spatial_gui.config.general.tooltip": "Общие",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Записывать указатель мыши",

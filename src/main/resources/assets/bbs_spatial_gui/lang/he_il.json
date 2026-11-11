@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "מתקדם",
   "bbs_spatial_gui.config.general.enabled": "הפעלת ממשקי BBS מרחביים",
   "bbs_spatial_gui.config.general.enabled-comment": "יחול לאחר יציאה מ־BBS וסיום הנפשת הסגירה. הגדירו את הפריסה ב־Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "השתמש בקנה מידה של ממשק BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "מחיל את קנה המידה של ממשק BBS על ממשקים מרחביים (מעוגל ל-1–6). כבוי: קנה המידה של Spatial GUI קובע.",
   "bbs_spatial_gui.config.general.title": "כללי",
   "bbs_spatial_gui.config.general.tooltip": "כללי",
   "bbs_spatial_gui.config.recording.recordMousePointer": "הקלטת סמן העכבר",

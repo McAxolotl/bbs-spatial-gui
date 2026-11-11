@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "ขั้นสูง",
   "bbs_spatial_gui.config.general.enabled": "เปิดใช้อินเทอร์เฟซเชิงพื้นที่ BBS",
   "bbs_spatial_gui.config.general.enabled-comment": "มีผลหลังออกจาก BBS และจบภาพเคลื่อนไหวปิด ตั้งค่าเค้าโครงใน Spatial GUI",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "ใช้ขนาดอินเทอร์เฟซของ BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "ใช้ขนาดอินเทอร์เฟซของ BBS กับอินเทอร์เฟซเชิงพื้นที่ (ปัดเป็น 1–6) ปิด: ใช้ขนาดของ Spatial GUI",
   "bbs_spatial_gui.config.general.title": "ทั่วไป",
   "bbs_spatial_gui.config.general.tooltip": "ทั่วไป",
   "bbs_spatial_gui.config.recording.recordMousePointer": "บันทึกตัวชี้เมาส์",

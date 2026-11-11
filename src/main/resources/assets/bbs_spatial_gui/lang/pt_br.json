@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Avançado",
   "bbs_spatial_gui.config.general.enabled": "Ativar interfaces espaciais do BBS",
   "bbs_spatial_gui.config.general.enabled-comment": "Entra em vigor ao sair do BBS e terminar a animação de fechamento. Configure o layout no Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "Usar a escala de interface do BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "Aplica a escala de interface do BBS às interfaces espaciais (arredondada de 1 a 6). Desativado: a escala do Spatial GUI prevalece.",
   "bbs_spatial_gui.config.general.title": "Geral",
   "bbs_spatial_gui.config.general.tooltip": "Geral",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Gravar o ponteiro do mouse",

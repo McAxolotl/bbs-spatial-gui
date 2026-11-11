@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "進階",
   "bbs_spatial_gui.config.general.enabled": "啟用 BBS 介面空間化",
   "bbs_spatial_gui.config.general.enabled-comment": "離開 BBS 並完成關閉動畫後生效。面板配置請在 Spatial GUI 中設定。",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "使用 BBS 介面縮放",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "將 BBS 的介面縮放套用到空間介面（取整為 1–6）。關閉時以圖形介面模組的 GUI 縮放為準。",
   "bbs_spatial_gui.config.general.title": "一般",
   "bbs_spatial_gui.config.general.tooltip": "一般",
   "bbs_spatial_gui.config.recording.recordMousePointer": "錄製滑鼠指標",

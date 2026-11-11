@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Haladó",
   "bbs_spatial_gui.config.general.enabled": "BBS térbeli felületek engedélyezése",
   "bbs_spatial_gui.config.general.enabled-comment": "A BBS elhagyása és a bezárási animáció után lép életbe. Az elrendezést a Spatial GUI kezeli.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "BBS felületméret használata",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "A BBS felületméretét alkalmazza a térbeli felületekre (1–6-ra kerekítve). Kikapcsolva a Spatial GUI mérete érvényes.",
   "bbs_spatial_gui.config.general.title": "Általános",
   "bbs_spatial_gui.config.general.tooltip": "Általános",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Egérmutató rögzítése",

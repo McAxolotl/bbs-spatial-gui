@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "高级",
   "bbs_spatial_gui.config.general.enabled": "启用 BBS 界面空间化",
   "bbs_spatial_gui.config.general.enabled-comment": "退出 BBS 并完成关闭动画后生效。面板布局请在 Spatial GUI 中设置。",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "使用 BBS 界面缩放",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "把 BBS 的界面缩放应用到空间界面（取整为 1–6）。关闭时以图形界面模组的 GUI 缩放为准。",
   "bbs_spatial_gui.config.general.title": "常规",
   "bbs_spatial_gui.config.general.tooltip": "常规",
   "bbs_spatial_gui.config.recording.recordMousePointer": "录制鼠标指针",

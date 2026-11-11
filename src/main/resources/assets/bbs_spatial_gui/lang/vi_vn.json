@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Nâng cao",
   "bbs_spatial_gui.config.general.enabled": "Bật giao diện không gian BBS",
   "bbs_spatial_gui.config.general.enabled-comment": "Có hiệu lực sau khi thoát BBS và kết thúc hoạt ảnh đóng. Điều chỉnh bố cục trong Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "Dùng tỉ lệ giao diện BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "Áp dụng tỉ lệ giao diện BBS cho giao diện không gian (làm tròn 1–6). Tắt: tỉ lệ của Spatial GUI được dùng.",
   "bbs_spatial_gui.config.general.title": "Chung",
   "bbs_spatial_gui.config.general.tooltip": "Chung",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Ghi con trỏ chuột",

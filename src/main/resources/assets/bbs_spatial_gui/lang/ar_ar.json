@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "متقدم",
   "bbs_spatial_gui.config.general.enabled": "تفعيل واجهات BBS المكانية",
   "bbs_spatial_gui.config.general.enabled-comment": "يُطبّق بعد مغادرة BBS وانتهاء حركة الإغلاق. اضبط التخطيط في Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "استخدام مقياس واجهة BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "يطبق مقياس واجهة BBS على الواجهات المكانية (يُقرَّب من 1 إلى 6). عند الإيقاف: يُعتمد مقياس Spatial GUI.",
   "bbs_spatial_gui.config.general.title": "عام",
   "bbs_spatial_gui.config.general.tooltip": "عام",
   "bbs_spatial_gui.config.recording.recordMousePointer": "تسجيل مؤشر الفأرة",

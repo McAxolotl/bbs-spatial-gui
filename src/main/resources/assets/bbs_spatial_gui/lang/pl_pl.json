@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Zaawansowane",
   "bbs_spatial_gui.config.general.enabled": "Włącz przestrzenne interfejsy BBS",
   "bbs_spatial_gui.config.general.enabled-comment": "Działa po zamknięciu BBS i zakończeniu animacji. Układ ustawisz w Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "Używaj skali interfejsu BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "Stosuje skalę interfejsu BBS do interfejsów przestrzennych (zaokrąglaną do 1–6). Wyłączone: obowiązuje skala Spatial GUI.",
   "bbs_spatial_gui.config.general.title": "Ogólne",
   "bbs_spatial_gui.config.general.tooltip": "Ogólne",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Nagrywaj wskaźnik myszy",

@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "고급",
   "bbs_spatial_gui.config.general.enabled": "BBS 공간 인터페이스 사용",
   "bbs_spatial_gui.config.general.enabled-comment": "BBS를 닫고 닫기 애니메이션이 끝난 뒤 적용됩니다. 배치는 Spatial GUI에서 설정하세요.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "BBS 인터페이스 배율 사용",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "BBS 인터페이스 배율을 공간 인터페이스에 적용합니다(1–6으로 반올림). 끄면 Spatial GUI의 배율이 적용됩니다.",
   "bbs_spatial_gui.config.general.title": "일반",
   "bbs_spatial_gui.config.general.tooltip": "일반",
   "bbs_spatial_gui.config.recording.recordMousePointer": "마우스 포인터 녹화",

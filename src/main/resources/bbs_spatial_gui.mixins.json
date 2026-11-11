@@ -45,7 +45,8 @@
     "VideoRecorderMixin",
     "RecordingAudioMixin",
     "BBSCursorMixin",
-    "SettingsOrderMixin"
+    "SettingsOrderMixin",
+    "SpatialUiScaleMixin"
   ],
   "injectors": {
     "defaultRequire": 0

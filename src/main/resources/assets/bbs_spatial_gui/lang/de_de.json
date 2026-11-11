@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Erweitert",
   "bbs_spatial_gui.config.general.enabled": "Räumliche BBS-Oberflächen aktivieren",
   "bbs_spatial_gui.config.general.enabled-comment": "Gilt nach dem Verlassen von BBS und dem Ende der Schließanimation. Das Layout wird in Spatial GUI eingestellt.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "BBS-Oberflächenskalierung verwenden",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "Wendet die BBS-Oberflächenskalierung auf räumliche Oberflächen an (auf 1–6 gerundet). Aus: Die GUI-Skalierung von Spatial GUI gilt.",
   "bbs_spatial_gui.config.general.title": "Allgemein",
   "bbs_spatial_gui.config.general.tooltip": "Allgemein",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Mauszeiger aufnehmen",

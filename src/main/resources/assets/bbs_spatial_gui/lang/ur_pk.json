@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "اعلیٰ ترتیبات",
   "bbs_spatial_gui.config.general.enabled": "BBS کے مکانی انٹرفیس فعال کریں",
   "bbs_spatial_gui.config.general.enabled-comment": "BBS بند کرنے اور بندش کی حرکت مکمل ہونے کے بعد لاگو ہوگا۔ ترتیب Spatial GUI میں کریں۔",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "BBS انٹرفیس اسکیل استعمال کریں",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "BBS انٹرفیس اسکیل کو فضائی انٹرفیس پر لاگو کرتا ہے (1–6 تک گول)۔ بند: Spatial GUI کا اسکیل لاگو ہوگا۔",
   "bbs_spatial_gui.config.general.title": "عمومی",
   "bbs_spatial_gui.config.general.tooltip": "عمومی",
   "bbs_spatial_gui.config.recording.recordMousePointer": "ماؤس پوائنٹر ریکارڈ کریں",

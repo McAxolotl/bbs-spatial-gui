@@ -7,6 +7,7 @@ import mchorse.bbs_mod.ui.utils.icons.Icons;
 public final class BBSOptions {
     public static final String ID = "bbs_spatial_gui";
     private static ValueBoolean enabled,
+            useBbsUiScale,
             recordSpatialGui,
             recordMousePointer,
             useNativeCursor,
@@ -15,6 +16,7 @@ public final class BBSOptions {
     public static void register(SettingsBuilder builder) {
         builder.category("general", Icons.FULLSCREEN);
         enabled = builder.getBoolean("enabled", true);
+        useBbsUiScale = builder.getBoolean("useBbsUiScale", false);
         builder.category("recording", Icons.VIDEO_CAMERA);
         recordSpatialGui = builder.getBoolean("recordSpatialGui", true);
         recordMousePointer = builder.getBoolean("recordMousePointer", true);
@@ -25,6 +27,10 @@ public final class BBSOptions {
 
     public static boolean enabled(boolean fallback) {
         return enabled == null ? fallback : enabled.get();
+    }
+
+    public static boolean bbsUiScale() {
+        return useBbsUiScale != null && useBbsUiScale.get();
     }
 
     public static boolean recording(boolean fallback) {

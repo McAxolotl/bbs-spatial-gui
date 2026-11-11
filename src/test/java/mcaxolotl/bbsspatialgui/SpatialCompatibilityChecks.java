@@ -1,5 +1,7 @@
 package mcaxolotl.bbsspatialgui;
 
+import mcaxolotl.bbsspatialgui.ui.SpatialUiScale;
+
 import net.fabricmc.loader.api.Version;
 import net.fabricmc.loader.api.metadata.version.VersionPredicate;
 
@@ -333,6 +335,13 @@ public final class SpatialCompatibilityChecks {
                         + installed
                         + " is outside the declared dependency range "
                         + declared);
+        CoreTests.check(SpatialUiScale.toIntegerScale(0.5f) == 1, "BBS UI scale 0.5 clamps to 1");
+        CoreTests.check(SpatialUiScale.toIntegerScale(1.0f) == 1, "BBS UI scale 1.0 rounds to 1");
+        CoreTests.check(SpatialUiScale.toIntegerScale(1.49f) == 1, "BBS UI scale 1.49 rounds to 1");
+        CoreTests.check(SpatialUiScale.toIntegerScale(1.51f) == 2, "BBS UI scale 1.51 rounds to 2");
+        CoreTests.check(SpatialUiScale.toIntegerScale(4.0f) == 4, "BBS UI scale 4.0 rounds to 4");
+        CoreTests.check(SpatialUiScale.toIntegerScale(9.0f) == 6, "BBS UI scale 9 clamps to 6");
+        System.out.println("PASS BBS interface scale bridge: fractional scale rounds into 1-6");
         checkApiSurface();
         checkMixinHooks();
         System.out.println(

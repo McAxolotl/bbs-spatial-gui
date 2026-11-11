@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Gelişmiş",
   "bbs_spatial_gui.config.general.enabled": "BBS uzamsal arayüzlerini etkinleştir",
   "bbs_spatial_gui.config.general.enabled-comment": "BBS’den çıkıp kapanış animasyonu tamamlanınca uygulanır. Yerleşimi Spatial GUI üzerinden ayarlayın.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "BBS arayüz ölçeğini kullan",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "BBS arayüz ölçeğini uzamsal arayüzlere uygular (1–6'ya yuvarlanır). Kapalı: Spatial GUI ölçeği geçerlidir.",
   "bbs_spatial_gui.config.general.title": "Genel",
   "bbs_spatial_gui.config.general.tooltip": "Genel",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Fare işaretçisini kaydet",

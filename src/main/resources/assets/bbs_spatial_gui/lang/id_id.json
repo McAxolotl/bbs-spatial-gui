@@ -5,6 +5,8 @@
   "bbs_spatial_gui.config.advanced.tooltip": "Lanjutan",
   "bbs_spatial_gui.config.general.enabled": "Aktifkan antarmuka spasial BBS",
   "bbs_spatial_gui.config.general.enabled-comment": "Berlaku setelah keluar dari BBS dan animasi penutupan selesai. Atur tata letak melalui Spatial GUI.",
+  "bbs_spatial_gui.config.general.useBbsUiScale": "Gunakan skala antarmuka BBS",
+  "bbs_spatial_gui.config.general.useBbsUiScale-comment": "Menerapkan skala antarmuka BBS ke antarmuka spasial (dibulatkan 1–6). Nonaktif: skala Spatial GUI yang berlaku.",
   "bbs_spatial_gui.config.general.title": "Umum",
   "bbs_spatial_gui.config.general.tooltip": "Umum",
   "bbs_spatial_gui.config.recording.recordMousePointer": "Rekam penunjuk tetikus",
