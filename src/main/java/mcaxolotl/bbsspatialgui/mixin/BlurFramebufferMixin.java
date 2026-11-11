@@ -34,7 +34,7 @@ public abstract class BlurFramebufferMixin {
             remap = false)
     private static class_276 bsg$blurCapturedInterface(class_310 client) {
         if (RenderContext.drawingSpatialGuiTarget()) {
-            var target = SpatialGUIClient.renderer().getTargetManager().getInventoryTarget();
+            var target = SpatialGUIClient.renderer().getScreenTexture().getTarget();
             if (target != null && target.field_1476 == RenderContext.spatialGuiFramebuffer())
                 return target;
         }

@@ -12,6 +12,7 @@ def checks = [
     pointerTest: 'mcaxolotl.bbsspatialgui.PointerTests',
     gpuTest: 'mcaxolotl.bbsspatialgui.GpuTests',
     upstreamRecorderTest: 'mcaxolotl.bbsspatialgui.UpstreamRecorderChecks',
+    spatialCompatibilityTest: 'mcaxolotl.bbsspatialgui.SpatialCompatibilityChecks',
     localizationTest: 'mcaxolotl.bbsspatialgui.LocalizationTests'
 ]
 
@@ -22,7 +23,13 @@ checks.each { taskName, entrypoint ->
         mainClass = entrypoint
         workingDir = layout.buildDirectory.dir("test-runtime/${taskName}").get().asFile
         doFirst { workingDir.mkdirs() }
-        if (taskName == 'upstreamRecorderTest') classpath += configurations.bbsFixture
+        if (taskName in ['upstreamRecorderTest', 'spatialCompatibilityTest']) classpath += configurations.bbsFixture
+        if (taskName == 'spatialCompatibilityTest') {
+            systemProperty 'bsg.modJson',
+                    layout.projectDirectory.file('src/main/resources/fabric.mod.json').asFile.absolutePath
+            systemProperty 'bsg.mixinsJson',
+                    layout.projectDirectory.file('src/main/resources/bbs_spatial_gui.mixins.json').asFile.absolutePath
+        }
         if (taskName in ['gpuTest', 'upstreamRecorderTest']) {
             onlyIf {
                 System.getenv('DISPLAY') || providers.gradleProperty('gpuTests')

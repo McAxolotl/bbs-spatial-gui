@@ -36,6 +36,7 @@ public abstract class CameraStateMixin {
             return;
         }
         FilmCameraBridge.beginCamera();
+        FilmCameraBridge.captureVanillaPose(camera);
     }
 
     @Inject(method = "method_19321", at = @At("TAIL"), require = 0, remap = false)

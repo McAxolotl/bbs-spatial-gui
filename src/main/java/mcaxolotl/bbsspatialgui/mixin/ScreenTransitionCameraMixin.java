@@ -25,6 +25,18 @@ public abstract class ScreenTransitionCameraMixin {
     }
 
     @Inject(
+            method = "getCameraStartXRot",
+            at = @At("HEAD"),
+            cancellable = true,
+            require = 1,
+            remap = false)
+    private void bsg$worldTransitionPitch(CallbackInfoReturnable<Float> cir) {
+        if (ScreenTransitionCamera.position() != null && RenderContext.currentSpatialBBSScreen()) {
+            cir.setReturnValue(ScreenTransitionCamera.pitch());
+        }
+    }
+
+    @Inject(
             method = "getCameraStartYRot",
             at = @At("HEAD"),
             cancellable = true,

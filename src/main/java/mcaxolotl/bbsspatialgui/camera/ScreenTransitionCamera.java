@@ -10,11 +10,14 @@ public final class ScreenTransitionCamera {
     private static Object world, screen;
     private static class_243 position, visiblePosition;
     private static float yaw, visibleYaw;
+    private static float pitch;
+    private static Float visiblePitch;
     private static int openingFrame, logSamples;
 
     public static void observeVisibleCamera(net.minecraft.class_4184 camera) {
         visiblePosition = camera.method_19326();
         visibleYaw = camera.method_19330();
+        visiblePitch = camera.method_19329();
     }
 
     public static void beginFrame() {
@@ -23,6 +26,7 @@ public final class ScreenTransitionCamera {
             world = client.field_1687;
             position = null;
             visiblePosition = null;
+            visiblePitch = null;
             screen = null;
         }
         if (world == null) return;
@@ -34,6 +38,7 @@ public final class ScreenTransitionCamera {
             var camera = client.field_1773.method_19418();
             position = visiblePosition != null ? visiblePosition : camera.method_19326();
             yaw = visiblePosition != null ? visibleYaw : camera.method_19330();
+            pitch = visiblePitch != null ? visiblePitch : camera.method_19329();
             screen = client.field_1755;
             openingFrame = 0;
         }
@@ -46,6 +51,8 @@ public final class ScreenTransitionCamera {
                             + position
                             + " originYaw="
                             + yaw
+                            + " originPitch="
+                            + pitch
                             + " rawCamera="
                             + camera.method_19326()
                             + " customCapture="
@@ -60,6 +67,10 @@ public final class ScreenTransitionCamera {
 
     public static float yaw() {
         return yaw;
+    }
+
+    public static float pitch() {
+        return pitch;
     }
 
     private ScreenTransitionCamera() {}

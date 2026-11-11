@@ -32,7 +32,7 @@
     "java": ">=17",
     "fabric-api": "*",
     "bbs": "=2.7-1.20.1",
-    "spatial_gui": "=1.9.1"
+    "spatial_gui": ">=1.11.1-hotfix <1.12"
   },
   "icon": "assets/bbs_spatial_gui/icon.png"
 }

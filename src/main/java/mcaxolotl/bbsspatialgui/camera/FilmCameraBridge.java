@@ -63,11 +63,25 @@ public final class FilmCameraBridge {
         access.bsg$setRotation(pose.yaw(), pose.pitch());
     }
 
-    // Installed immediately before the verified upstream callbacks by BBSSpatialGuiMixinPlugin.
-    public static void beforeBBSCamera(class_4184 camera) {
+    // Installed at the head of the camera update by CameraStateMixin. The snapshot must happen
+    // before any other mod's camera callback, whichever order they end up in.
+    public static void captureVanillaPose(class_4184 camera) {
         if (camera == class_310.method_1551().field_1773.method_19418()
                 && nativeDimensions
                 && !BackgroundWorldPass.active()) vanillaPose = snapshot(camera);
+    }
+
+    // Installed immediately after Spatial GUI's camera callback by BBSSpatialGuiMixinPlugin.
+    // Capturing here keeps the displayed panel pose correct no matter whether BBS runs before or
+    // after Spatial GUI.
+    public static void captureSpatialPose(class_4184 camera) {
+        if (camera == class_310.method_1551().field_1773.method_19418()
+                && nativeDimensions
+                && !BackgroundWorldPass.active()) {
+            spatialPose = snapshot(camera);
+            panelYaw = camera.method_19330();
+            panelPitch = camera.method_19329();
+        }
     }
 
     public static void beforeSpatialCamera(class_4184 camera) {
@@ -80,16 +94,15 @@ public final class FilmCameraBridge {
     public static boolean replaySpatialCamera(class_4184 camera) {
         if (!BackgroundWorldPass.active()
                 || spatialPose == null
-                || !BBSSpatialGuiMixinPlugin.cameraOrderVerified) return false;
+                || !BBSSpatialGuiMixinPlugin.cameraHooksVerified) return false;
         apply(camera, spatialPose);
         return true;
     }
 
     public static Pose afterSpatialCamera(class_4184 camera) {
         if (BackgroundWorldPass.active()) return null;
-        if (nativeDimensions) spatialPose = snapshot(camera);
         active = false;
-        if (!BBSSpatialGuiMixinPlugin.cameraOrderVerified
+        if (!BBSSpatialGuiMixinPlugin.cameraHooksVerified
                 || !RenderContext.currentSpatialBBSScreen()) return null;
         try {
             if (getController == null) {
@@ -117,8 +130,6 @@ public final class FilmCameraBridge {
             Vector3d position = (Vector3d) getPosition.invoke(controller);
             float yaw = ((Number) getYaw.invoke(controller)).floatValue();
             float pitch = ((Number) getPitch.invoke(controller)).floatValue();
-            panelYaw = camera.method_19330();
-            panelPitch = camera.method_19329();
             active = true;
             return new Pose(position.x, position.y, position.z, yaw, pitch);
         } catch (ReflectiveOperationException | LinkageError e) {
