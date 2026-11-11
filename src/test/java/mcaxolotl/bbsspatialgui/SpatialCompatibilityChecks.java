@@ -142,7 +142,12 @@ public final class SpatialCompatibilityChecks {
                 @Override
                 public AnnotationVisitor visitAnnotation(String annotation, boolean visible) {
                     String kind = annotation.substring(1, annotation.length() - 1);
-                    if (!kind.startsWith("org/spongepowered/asm/mixin/injection/")) return null;
+                    // MixinExtras injectors carry the same "method"/"at" elements, so validating
+                    // them keeps WrapOperation/ModifyReturnValue hooks covered as well.
+                    boolean injector =
+                            kind.startsWith("org/spongepowered/asm/mixin/injection/")
+                                    || kind.startsWith("com/llamalad7/mixinextras/injector/");
+                    if (!injector) return null;
                     return new AnnotationVisitor(Opcodes.ASM9) {
                         @Override
                         public AnnotationVisitor visitArray(String element) {
