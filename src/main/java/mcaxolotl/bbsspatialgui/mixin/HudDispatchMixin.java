@@ -31,11 +31,10 @@ import java.nio.ByteBuffer;
 
 @Mixin(targets = "net.minecraft.class_757", remap = false)
 public abstract class HudDispatchMixin {
-    @Unique private final Matrix4f bsg$hudProjection = new Matrix4f();
-    @Unique private final Matrix4f bsg$hudModelView = new Matrix4f();
     @Unique private final ByteBuffer bsg$colorMask = ByteBuffer.allocateDirect(4);
-    @Unique private class_8251 bsg$hudSorting;
     @Unique private boolean bsg$hudReady;
+    @Unique private int bsg$hudWidth;
+    @Unique private int bsg$hudHeight;
     @Unique private int bsg$crosshairLogs;
 
     @Inject(method = "method_3192", at = @At("HEAD"), require = 0, remap = false)
@@ -58,13 +57,14 @@ public abstract class HudDispatchMixin {
             require = 0,
             remap = false)
     private void bsg$saveHudState(class_329 hud, class_332 graphics, float tickDelta) {
+        var window = class_310.method_1551().method_22683();
+        bsg$hudWidth = window.method_4486();
+        bsg$hudHeight = window.method_4502();
         hud.method_1753(graphics, tickDelta);
-        if (RenderContext.nativeCrosshairRequested()) {
-            bsg$hudProjection.set(RenderSystem.getProjectionMatrix());
-            bsg$hudModelView.set(RenderSystem.getModelViewStack().method_23760().method_23761());
-            bsg$hudSorting = RenderSystem.getVertexSorting();
-            bsg$hudReady = Math.abs(bsg$hudProjection.m33() - 1.0f) < 0.001f;
-        }
+        bsg$hudReady =
+                RenderContext.nativeCrosshairRequested()
+                        && bsg$hudWidth > 0
+                        && bsg$hudHeight > 0;
     }
 
     @Inject(method = "method_3192", at = @At("TAIL"), require = 0, remap = false)
@@ -75,9 +75,8 @@ public abstract class HudDispatchMixin {
         var target = client.method_1522();
         NativeCrosshairMixin hud = (NativeCrosshairMixin) client.field_1705;
         int width = hud.bsg$getWidth(), height = hud.bsg$getHeight();
-        int projectedWidth = Math.round(2.0f / Math.abs(bsg$hudProjection.m00()));
-        int projectedHeight = Math.round(2.0f / Math.abs(bsg$hudProjection.m11()));
-        if (projectedWidth <= 0 || projectedHeight <= 0) return;
+        int hudWidth = bsg$hudWidth, hudHeight = bsg$hudHeight;
+        if (hudWidth <= 0 || hudHeight <= 0) return;
         Matrix4f oldProjection = new Matrix4f(RenderSystem.getProjectionMatrix());
         class_8251 oldSorting = RenderSystem.getVertexSorting();
         int draw = GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING);
@@ -97,19 +96,24 @@ public abstract class HudDispatchMixin {
         var modelView = RenderSystem.getModelViewStack();
         modelView.method_22903();
         try {
+            // Rebuild the vanilla GUI ortho for the dimensions the HUD actually used. Reusing
+            // whatever projection/model-view BBS leaves behind can be a 3D or film-ortho matrix,
+            // which draws only part of the crosshair (or the wrong size) over the panel.
+            Matrix4f hudProjection =
+                    new Matrix4f().setOrtho(0.0f, (float) hudWidth, (float) hudHeight, 0.0f, 1000.0f, 21000.0f);
             GL30.glBindFramebuffer(GL30.GL_FRAMEBUFFER, target.field_1476);
             GlStateManager._viewport(0, 0, target.field_1480, target.field_1477);
-            RenderSystem.setProjectionMatrix(bsg$hudProjection, bsg$hudSorting);
+            RenderSystem.setProjectionMatrix(hudProjection, class_8251.field_43361);
             modelView.method_34426();
-            modelView.method_34425(bsg$hudModelView);
+            modelView.method_46416(0.0f, 0.0f, -11000.0f);
             RenderSystem.applyModelViewMatrix();
             RenderSystem.disableDepthTest();
             RenderSystem.enableBlend();
             GlStateManager._disableScissorTest();
             RenderSystem.colorMask(true, true, true, true);
             RenderSystem.setShaderColor(1, 1, 1, 1);
-            hud.bsg$setWidth(projectedWidth);
-            hud.bsg$setHeight(projectedHeight);
+            hud.bsg$setWidth(hudWidth);
+            hud.bsg$setHeight(hudHeight);
             RenderContext.lateCrosshair(true);
             class_332 graphics = new class_332(client, client.method_22940().method_23000());
             hud.bsg$renderCrosshair(graphics);
@@ -140,10 +144,14 @@ public abstract class HudDispatchMixin {
         }
         if (BBSSpatialGui.debugLogging() && bsg$crosshairLogs++ < 3) {
             System.out.println(
-                    "[BBS Spatial GUI] Composited vanilla crosshair with saved HUD state "
-                            + projectedWidth
+                    "[BBS Spatial GUI] Composited vanilla crosshair at "
+                            + hudWidth
                             + "x"
-                            + projectedHeight);
+                            + hudHeight
+                            + " on "
+                            + target.field_1480
+                            + "x"
+                            + target.field_1477);
         }
     }
 
