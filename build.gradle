@@ -16,7 +16,7 @@ plugins {
 }
 
 group = 'mcaxolotl.bbsspatialgui'
-version = '1.0.0'
+version = '1.1.0'
 base { archivesName = 'bbs-spatial-gui' }
 
 repositories {
